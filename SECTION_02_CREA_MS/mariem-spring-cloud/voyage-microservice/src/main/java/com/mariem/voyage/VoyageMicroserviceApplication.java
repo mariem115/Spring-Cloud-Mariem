@@ -25,7 +25,6 @@ public class VoyageMicroserviceApplication {
 					.dateDepart(LocalDate.of(2027, 7, 10))
 					.dateRetour(LocalDate.of(2027, 7, 20))
 					.email("mariem@gmail.com")
-					.codeType("CRU")
 					.build());
 			voyageRepository.save(Voyage.builder()
 					.destination("Istanbul")
@@ -33,7 +32,6 @@ public class VoyageMicroserviceApplication {
 					.dateDepart(LocalDate.of(2027, 8, 5))
 					.dateRetour(LocalDate.of(2027, 8, 15))
 					.email("ahmed@gmail.com")
-					.codeType("CIR")
 					.build());
 			voyageRepository.save(Voyage.builder()
 					.destination("Djerba")
@@ -41,7 +39,6 @@ public class VoyageMicroserviceApplication {
 					.dateDepart(LocalDate.of(2027, 6, 1))
 					.dateRetour(LocalDate.of(2027, 6, 7))
 					.email("mariem@gmail.com")
-					.codeType("SEJ")
 					.build());
 		};
 	}

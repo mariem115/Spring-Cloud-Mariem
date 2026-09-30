@@ -21,8 +21,7 @@ public class VoyageServiceImpl implements VoyageService {
                 voyage.getPrix(),
                 voyage.getDateDepart(),
                 voyage.getDateRetour(),
-                voyage.getEmail(),
-                voyage.getCodeType()
+                voyage.getEmail()
         );
     }
 }
