@@ -1,0 +1,30 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.16)
+
+2026-10-08T11:15:54.752+01:00  INFO 29368 --- [configserver] [           main] c.m.c.ConfigserverApplication            : Starting ConfigserverApplication v0.0.1-SNAPSHOT using Java 25 with PID 29368 (C:\ed\3eme\Microservices\mariem-spring-cloud\SECTION_06_CONFIGSERVER\mariem-spring-cloud\configserver\target\configserver-0.0.1-SNAPSHOT.jar started by Mariem Younes in C:\ed\3eme\Microservices\mariem-spring-cloud\SECTION_06_CONFIGSERVER\mariem-spring-cloud)
+2026-10-08T11:15:54.755+01:00  INFO 29368 --- [configserver] [           main] c.m.c.ConfigserverApplication            : The following 1 profile is active: "git"
+2026-10-08T11:15:55.766+01:00  INFO 29368 --- [configserver] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=828134bb-6644-36cf-add3-4a279ecefa8d
+2026-10-08T11:15:56.073+01:00  INFO 29368 --- [configserver] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9999 (http)
+2026-10-08T11:15:56.089+01:00  INFO 29368 --- [configserver] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-08T11:15:56.089+01:00  INFO 29368 --- [configserver] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-10-08T11:15:56.128+01:00  INFO 29368 --- [configserver] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-10-08T11:15:56.129+01:00  INFO 29368 --- [configserver] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1320 ms
+2026-10-08T11:15:59.303+01:00  INFO 29368 --- [configserver] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2026-10-08T11:15:59.367+01:00  INFO 29368 --- [configserver] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9999 (http) with context path '/'
+2026-10-08T11:15:59.392+01:00  INFO 29368 --- [configserver] [           main] c.m.c.ConfigserverApplication            : Started ConfigserverApplication in 5.238 seconds (process running for 5.712)
+2026-10-08T11:17:51.456+01:00  INFO 29368 --- [configserver] [nio-9999-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-08T11:17:51.456+01:00  INFO 29368 --- [configserver] [nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-10-08T11:17:51.458+01:00  INFO 29368 --- [configserver] [nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-10-08T11:17:52.228+01:00  INFO 29368 --- [configserver] [nio-9999-exec-1] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [C:\Users\MARIEM~1\AppData\Local\Temp\config-repo-17605076307159673195\user.yml]' via location 'file:/C:/Users/MARIEM~1/AppData/Local/Temp/config-repo-17605076307159673195/'
+2026-10-08T11:17:52.865+01:00  INFO 29368 --- [configserver] [nio-9999-exec-2] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [C:\Users\MARIEM~1\AppData\Local\Temp\config-repo-17605076307159673195\voyage.yml]' via location 'file:/C:/Users/MARIEM~1/AppData/Local/Temp/config-repo-17605076307159673195/'
+2026-10-08T11:17:53.500+01:00  INFO 29368 --- [configserver] [nio-9999-exec-8] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [C:\Users\MARIEM~1\AppData\Local\Temp\config-repo-17605076307159673195\user-prod.yml]' via location 'file:/C:/Users/MARIEM~1/AppData/Local/Temp/config-repo-17605076307159673195/'
+2026-10-08T11:17:53.502+01:00  INFO 29368 --- [configserver] [nio-9999-exec-8] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [C:\Users\MARIEM~1\AppData\Local\Temp\config-repo-17605076307159673195\user.yml]' via location 'file:/C:/Users/MARIEM~1/AppData/Local/Temp/config-repo-17605076307159673195/'
+2026-10-08T11:17:54.063+01:00  INFO 29368 --- [configserver] [nio-9999-exec-4] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [C:\Users\MARIEM~1\AppData\Local\Temp\config-repo-17605076307159673195\voyage-prod.yml]' via location 'file:/C:/Users/MARIEM~1/AppData/Local/Temp/config-repo-17605076307159673195/'
+2026-10-08T11:17:54.064+01:00  INFO 29368 --- [configserver] [nio-9999-exec-4] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [C:\Users\MARIEM~1\AppData\Local\Temp\config-repo-17605076307159673195\voyage.yml]' via location 'file:/C:/Users/MARIEM~1/AppData/Local/Temp/config-repo-17605076307159673195/'

@@ -1,0 +1,4 @@
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.thoughtworks.xstream.converters.reflection.SunUnsafeReflectionProvider (jar:nested:/C:/ed/3eme/Microservices/mariem-spring-cloud/SECTION_06_CONFIGSERVER/mariem-spring-cloud/eurekaserver/target/eurekaserver-0.0.1-SNAPSHOT.jar/!BOOT-INF/lib/xstream-1.4.21.jar!/)
+WARNING: Please consider reporting this to the maintainers of class com.thoughtworks.xstream.converters.reflection.SunUnsafeReflectionProvider
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release

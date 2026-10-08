@@ -1,0 +1,84 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.16)
+
+2026-10-08T11:17:54.292+01:00  INFO 27220 --- [voyage] [           main] c.m.v.VoyageMicroserviceApplication      : Starting VoyageMicroserviceApplication v0.0.1-SNAPSHOT using Java 25 with PID 27220 (C:\ed\3eme\Microservices\mariem-spring-cloud\SECTION_06_CONFIGSERVER\mariem-spring-cloud\voyage-microservice\target\voyage-microservice-0.0.1-SNAPSHOT.jar started by Mariem Younes in C:\ed\3eme\Microservices\mariem-spring-cloud\SECTION_06_CONFIGSERVER\mariem-spring-cloud)
+2026-10-08T11:17:54.298+01:00  INFO 27220 --- [voyage] [           main] c.m.v.VoyageMicroserviceApplication      : The following 1 profile is active: "prod"
+2026-10-08T11:17:54.372+01:00  INFO 27220 --- [voyage] [           main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:9999/
+2026-10-08T11:17:54.373+01:00  INFO 27220 --- [voyage] [           main] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=voyage, profiles=[default], label=null, version=05605d2522bbf4c05df3da9a423ae467af99d5a3, state=
+2026-10-08T11:17:54.374+01:00  INFO 27220 --- [voyage] [           main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:9999/
+2026-10-08T11:17:54.374+01:00  INFO 27220 --- [voyage] [           main] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=voyage, profiles=[prod], label=null, version=05605d2522bbf4c05df3da9a423ae467af99d5a3, state=
+2026-10-08T11:17:55.800+01:00  INFO 27220 --- [voyage] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-08T11:17:56.057+01:00  INFO 27220 --- [voyage] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 236 ms. Found 1 JPA repository interface.
+2026-10-08T11:17:56.578+01:00  INFO 27220 --- [voyage] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=92d9645b-12ce-3093-bf7f-02eaea4ac4b5
+2026-10-08T11:17:57.162+01:00  INFO 27220 --- [voyage] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-10-08T11:17:57.179+01:00  INFO 27220 --- [voyage] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-08T11:17:57.179+01:00  INFO 27220 --- [voyage] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-10-08T11:17:57.212+01:00  INFO 27220 --- [voyage] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-10-08T11:17:57.213+01:00  INFO 27220 --- [voyage] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2835 ms
+2026-10-08T11:17:57.612+01:00  INFO 27220 --- [voyage] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-10-08T11:17:57.675+01:00  INFO 27220 --- [voyage] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.53.Final
+2026-10-08T11:17:57.706+01:00  INFO 27220 --- [voyage] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-10-08T11:17:57.945+01:00  INFO 27220 --- [voyage] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-08T11:17:57.975+01:00  INFO 27220 --- [voyage] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-10-08T11:17:58.188+01:00  INFO 27220 --- [voyage] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:voyagedb user=SA
+2026-10-08T11:17:58.191+01:00  INFO 27220 --- [voyage] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-10-08T11:17:58.245+01:00  INFO 27220 --- [voyage] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-08T11:17:59.080+01:00  INFO 27220 --- [voyage] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: create table voyage (idvoyage bigint generated by default as identity, date_depart date, date_retour date, destination varchar(255), email varchar(255), prix float(53), primary key (idvoyage))
+2026-10-08T11:17:59.142+01:00  INFO 27220 --- [voyage] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-08T11:17:59.737+01:00  WARN 27220 --- [voyage] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-10-08T11:17:59.811+01:00  INFO 27220 --- [voyage] [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-10-08T11:17:59.821+01:00  INFO 27220 --- [voyage] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-10-08T11:17:59.900+01:00  INFO 27220 --- [voyage] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-10-08T11:17:59.908+01:00  INFO 27220 --- [voyage] [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-10-08T11:17:59.922+01:00  INFO 27220 --- [voyage] [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-10-08T11:17:59.923+01:00  INFO 27220 --- [voyage] [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-10-08T11:17:59.923+01:00  INFO 27220 --- [voyage] [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-10-08T11:17:59.923+01:00  INFO 27220 --- [voyage] [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-10-08T11:17:59.923+01:00  INFO 27220 --- [voyage] [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-10-08T11:17:59.924+01:00  INFO 27220 --- [voyage] [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-10-08T11:17:59.924+01:00  INFO 27220 --- [voyage] [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-10-08T11:18:00.366+01:00  INFO 27220 --- [voyage] [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-10-08T11:18:00.368+01:00  INFO 27220 --- [voyage] [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-10-08T11:18:00.370+01:00  INFO 27220 --- [voyage] [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-10-08T11:18:00.376+01:00  INFO 27220 --- [voyage] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1791454680376 with initial instances count: 0
+2026-10-08T11:18:00.399+01:00  INFO 27220 --- [voyage] [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'USER' URL not provided. Will try picking an instance via load-balancing.
+2026-10-08T11:18:00.982+01:00  INFO 27220 --- [voyage] [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:voyagedb'
+2026-10-08T11:18:01.036+01:00  WARN 27220 --- [voyage] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-10-08T11:18:01.051+01:00  INFO 27220 --- [voyage] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoints beneath base path '/actuator'
+2026-10-08T11:18:01.107+01:00  INFO 27220 --- [voyage] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application VOYAGE with eureka with status UP
+2026-10-08T11:18:01.109+01:00  INFO 27220 --- [voyage] [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1791454681109, current=UP, previous=STARTING]
+2026-10-08T11:18:01.111+01:00  INFO 27220 --- [voyage] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_VOYAGE/DESKTOP-NC2OKMT:voyage:8081: registering service...
+2026-10-08T11:18:01.127+01:00  INFO 27220 --- [voyage] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2026-10-08T11:18:01.128+01:00  INFO 27220 --- [voyage] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2026-10-08T11:18:01.160+01:00  INFO 27220 --- [voyage] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_VOYAGE/DESKTOP-NC2OKMT:voyage:8081 - registration status: 204
+2026-10-08T11:18:01.168+01:00  INFO 27220 --- [voyage] [           main] c.m.v.VoyageMicroserviceApplication      : Started VoyageMicroserviceApplication in 10.641 seconds (process running for 11.35)
+Hibernate: insert into voyage (date_depart,date_retour,destination,email,prix,idvoyage) values (?,?,?,?,?,default)
+Hibernate: insert into voyage (date_depart,date_retour,destination,email,prix,idvoyage) values (?,?,?,?,?,default)
+Hibernate: insert into voyage (date_depart,date_retour,destination,email,prix,idvoyage) values (?,?,?,?,?,default)
+2026-10-08T11:18:30.372+01:00  INFO 27220 --- [voyage] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-10-08T11:18:30.374+01:00  INFO 27220 --- [voyage] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-10-08T11:18:30.376+01:00  INFO 27220 --- [voyage] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-10-08T11:18:30.377+01:00  INFO 27220 --- [voyage] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-10-08T11:18:30.378+01:00  INFO 27220 --- [voyage] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-10-08T11:18:30.380+01:00  INFO 27220 --- [voyage] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-10-08T11:18:30.382+01:00  INFO 27220 --- [voyage] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-10-08T11:18:30.454+01:00  INFO 27220 --- [voyage] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-10-08T11:19:06.724+01:00  INFO 27220 --- [voyage] [nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-08T11:19:06.726+01:00  INFO 27220 --- [voyage] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-10-08T11:19:06.728+01:00  INFO 27220 --- [voyage] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+Hibernate: select v1_0.idvoyage,v1_0.date_depart,v1_0.date_retour,v1_0.destination,v1_0.email,v1_0.prix from voyage v1_0 where v1_0.idvoyage=?
