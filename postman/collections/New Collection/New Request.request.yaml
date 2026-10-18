@@ -1,4 +1,4 @@
 $kind: http-request
-url: ""
+url: http://localhost:8082/api/agences/AG001
 method: GET
 order: 1791456385358

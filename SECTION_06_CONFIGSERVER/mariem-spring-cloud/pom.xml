@@ -13,7 +13,7 @@
         <module>configserver</module>
         <module>eurekaserver</module>
         <module>gatewayserver</module>
-        <module>user-microservice</module>
+        <module>agence-microservice</module>
         <module>voyage-microservice</module>
     </modules>
 

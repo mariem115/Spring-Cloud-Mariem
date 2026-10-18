@@ -17,8 +17,8 @@ public class GatewayserverApplication {
 	public RouteLocator MyRouteConfig(RouteLocatorBuilder routeLocatorBuilder) {
 		return routeLocatorBuilder.routes()
 				.route(p -> p
-						.path("/api/users/**")
-						.uri("lb://USER"))
+						.path("/api/agences/**")
+						.uri("lb://AGENCE"))
 				.route(p -> p
 						.path("/api/voyages/**")
 						.uri("lb://VOYAGE"))
