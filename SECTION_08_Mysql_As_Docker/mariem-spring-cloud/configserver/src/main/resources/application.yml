@@ -1,0 +1,25 @@
+server:
+  port: 9999
+
+spring:
+  application:
+    name: "configserver"
+  profiles:
+    # active: native
+    active: git
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/mariem115/config-repo.git
+          default-label: main
+          clone-on-start: true
+        # native:
+          # search-locations: "classpath:/config"
+          # search-locations: file:///C:/ed/3eme/Microservices/mariem-spring-cloud/SECTION_06_CONFIGSERVER/mariem-spring-cloud/config-repo
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
