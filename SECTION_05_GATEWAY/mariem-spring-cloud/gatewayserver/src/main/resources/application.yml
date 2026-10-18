@@ -14,9 +14,9 @@ spring:
         webflux:
           routes:
             - id: r1
-              uri: lb://USER
+              uri: lb://AGENCE
               predicates:
-                - Path=/api/users/**
+                - Path=/api/agences/**
             - id: r2
               uri: lb://VOYAGE
               predicates:
