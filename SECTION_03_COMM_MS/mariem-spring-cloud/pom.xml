@@ -10,7 +10,7 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>user-microservice</module>
+        <module>agence-microservice</module>
         <module>voyage-microservice</module>
     </modules>
 
