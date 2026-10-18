@@ -21,5 +21,5 @@ public class VoyageDto {
 
     private LocalDate dateRetour;
 
-    private String email;
+    private String codeAgence;
 }

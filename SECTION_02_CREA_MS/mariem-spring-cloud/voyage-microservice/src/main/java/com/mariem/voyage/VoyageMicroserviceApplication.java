@@ -24,21 +24,21 @@ public class VoyageMicroserviceApplication {
 					.prix(1200.0)
 					.dateDepart(LocalDate.of(2027, 7, 10))
 					.dateRetour(LocalDate.of(2027, 7, 20))
-					.email("mariem@gmail.com")
+					.codeAgence("AG001")
 					.build());
 			voyageRepository.save(Voyage.builder()
 					.destination("Istanbul")
 					.prix(950.0)
 					.dateDepart(LocalDate.of(2027, 8, 5))
 					.dateRetour(LocalDate.of(2027, 8, 15))
-					.email("ahmed@gmail.com")
+					.codeAgence("AG002")
 					.build());
 			voyageRepository.save(Voyage.builder()
 					.destination("Djerba")
 					.prix(450.0)
 					.dateDepart(LocalDate.of(2027, 6, 1))
 					.dateRetour(LocalDate.of(2027, 6, 7))
-					.email("mariem@gmail.com")
+					.codeAgence("AG001")
 					.build());
 		};
 	}
