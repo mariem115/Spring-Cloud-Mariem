@@ -1,10 +1,9 @@
-package com.mariem.user.entities;
+package com.mariem.agence.entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -15,20 +14,19 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Builder
 @Entity
-@Table(name = "users") // USER est un mot reserve en SQL
-public class User {
+public class Agence {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long idAgence;
 
-    private String username;
+    private String code;
 
-    private String password;
+    private String nom;
+
+    private String adresse;
+
+    private String telephone;
 
     private String email;
-
-    private String role;
-
-    private Boolean enabled;
 }

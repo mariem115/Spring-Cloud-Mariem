@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.mariem</groupId>
-	<artifactId>user-microservice</artifactId>
+	<artifactId>agence-microservice</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>user-microservice</name>
-	<description>Microservice de gestion des utilisateurs</description>
+	<name>agence-microservice</name>
+	<description>Microservice de gestion des agences</description>
 	<properties>
 		<java.version>21</java.version>
 		<spring-cloud.version>2025.0.3</spring-cloud.version>

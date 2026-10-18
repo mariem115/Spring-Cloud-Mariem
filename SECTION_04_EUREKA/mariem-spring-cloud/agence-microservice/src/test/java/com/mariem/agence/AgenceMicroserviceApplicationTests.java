@@ -1,10 +1,10 @@
-package com.mariem.user;
+package com.mariem.agence;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class UserMicroserviceApplicationTests {
+class AgenceMicroserviceApplicationTests {
 
 	@Test
 	void contextLoads() {

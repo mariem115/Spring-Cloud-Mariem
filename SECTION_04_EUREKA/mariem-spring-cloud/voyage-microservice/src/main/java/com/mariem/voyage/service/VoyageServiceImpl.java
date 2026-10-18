@@ -1,7 +1,7 @@
 package com.mariem.voyage.service;
 
 import com.mariem.voyage.dto.APIResponseDto;
-import com.mariem.voyage.dto.UserDto;
+import com.mariem.voyage.dto.AgenceDto;
 import com.mariem.voyage.dto.VoyageDto;
 import com.mariem.voyage.entities.Voyage;
 import com.mariem.voyage.repos.VoyageRepository;
@@ -25,15 +25,15 @@ public class VoyageServiceImpl implements VoyageService {
 
         // Communication avec WebClient
         /*
-        UserDto userDto = webClient.get()
-                .uri("http://localhost:8082/api/users/" + voyage.getEmail())
+        AgenceDto agenceDto = webClient.get()
+                .uri("http://localhost:8082/api/agences/" + voyage.getCodeAgence())
                 .retrieve()
-                .bodyToMono(UserDto.class)
+                .bodyToMono(AgenceDto.class)
                 .block();
         */
 
         // Communication avec Spring Cloud OpenFeign
-        UserDto userDto = apiClient.getUserByEmail(voyage.getEmail());
+        AgenceDto agenceDto = apiClient.getAgenceByCode(voyage.getCodeAgence());
 
         VoyageDto voyageDto = new VoyageDto(
                 voyage.getIdvoyage(),
@@ -41,13 +41,13 @@ public class VoyageServiceImpl implements VoyageService {
                 voyage.getPrix(),
                 voyage.getDateDepart(),
                 voyage.getDateRetour(),
-                voyage.getEmail(),
-                userDto.getUsername()
+                voyage.getCodeAgence(),
+                agenceDto.getNom()
         );
 
         APIResponseDto apiResponseDto = new APIResponseDto();
         apiResponseDto.setVoyageDto(voyageDto);
-        apiResponseDto.setUserDto(userDto);
+        apiResponseDto.setAgenceDto(agenceDto);
 
         return apiResponseDto;
     }

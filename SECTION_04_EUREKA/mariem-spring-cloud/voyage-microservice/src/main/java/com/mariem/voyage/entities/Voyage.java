@@ -30,5 +30,5 @@ public class Voyage {
 
     private LocalDate dateRetour;
 
-    private String email;
+    private String codeAgence;
 }

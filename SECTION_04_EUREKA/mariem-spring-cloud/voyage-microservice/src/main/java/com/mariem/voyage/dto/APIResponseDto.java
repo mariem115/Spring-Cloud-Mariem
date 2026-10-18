@@ -11,5 +11,5 @@ public class APIResponseDto {
 
     private VoyageDto voyageDto;
 
-    private UserDto userDto;
+    private AgenceDto agenceDto;
 }
